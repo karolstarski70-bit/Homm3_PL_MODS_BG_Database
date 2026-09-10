@@ -28,7 +28,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs-material mkdocs-exclude-search mkdocs-awesome-nav
+          pip install mkdocs-material \
+                      mkdocs-exclude-search \
+                      mkdocs-awesome-pages-plugin \
+                      mkdocs-static-i18n \
+                      mkdocs-minify-plugin
 
       - name: Build site
         run: mkdocs build
